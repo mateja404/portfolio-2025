@@ -36,7 +36,7 @@ const HomePage = () => {
             <p className='text-slate-300/60 text-md'>Turning idea in web application. Over than 2 years of experience.</p>
           </div>
           <div className='w-full xl:w-1/2 flex items-center relative'>
-            <Image src={homeimg} alt='hero image' width={280} height={280} className='rounded-full object-cover lg:float-right lg:absolute lg:right-0 lg:mt-35 xl:-mt-20 xl:float-right xl:absolute xl:right-0 max-sm:static max-sm:mx-auto sm:static sm:mx-auto'/>
+            <Image src={homeimg} priority alt='hero image' width={280} height={280} className='rounded-full object-cover lg:float-right lg:absolute lg:right-0 lg:mt-35 xl:-mt-20 xl:float-right xl:absolute xl:right-0 max-sm:static max-sm:mx-auto sm:static sm:mx-auto'/>
           </div>
         </section>
         <Features isSidebarOpen={isSidebarOpen}/>
