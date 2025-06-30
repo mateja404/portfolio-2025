@@ -5,8 +5,7 @@ import Navbar from './Navbar';
 import Image from 'next/image';
 import homeimg from "../../public/heroimg.png";
 import Features from './Features';
-import TechStack from './TechStack';
-import Tech from "./Tech"
+import Tech from "./Tech";
 import Footer from './Footer';
 
 const HomePage = () => {
@@ -30,7 +29,7 @@ const HomePage = () => {
         <section className={isSidebarOpen ? 'hidden' : 'w-full mx-auto xl:mt-15 py-6 md:py-12 flex flex-col-reverse xl:flex-row 2xl:flex-row items-center justify-between gap-10'}>
           <div className='w-full xl:w-1/2 flex flex-col gap-y-3 max-sm:text-center sm:text-center lg:text-start xl:text-start'>
             <h1 className='font-bold text-5xl'>
-              Mateja <span className='text-emerald-300'>Ljabulica</span>
+              Mateja <span className='text-emerald-300'>Stoev</span>
             </h1>
             <h2 className='text-2xl text-slate-300'>Full Stack Web Developer</h2>
             <p className='text-slate-300/60 text-md'>Turning idea in web application. Over than 2 years of experience.</p>

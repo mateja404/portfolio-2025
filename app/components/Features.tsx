@@ -10,7 +10,7 @@ const Features = ({ isSidebarOpen }: any) => {
             <Sparkles />
           </div>
           <h1 className='text-2xl font-bold text-emerald-300'>MERN & Beyond</h1>
-          <p className='text-sm font-bold text-cyan-100'>
+          <p className='text-sm semi-semi-bold text-cyan-100'>
             From MongoDB to MySQL, from Express to Next.js – versatility is the weapon of choice.
           </p>
         </div>
@@ -19,7 +19,7 @@ const Features = ({ isSidebarOpen }: any) => {
             <Sparkles />
           </div>
           <h1 className='text-2xl font-bold text-emerald-300'>Digital Craftsman</h1>
-          <p className='text-sm font-bold text-cyan-100'>
+          <p className='text-sm semi-semi-bold text-cyan-100'>
             Sculpting full-stack solutions with precision and a passion for clean code.
           </p>
         </div>
@@ -30,7 +30,7 @@ const Features = ({ isSidebarOpen }: any) => {
             <Sparkles />
           </div>
           <h1 className='text-2xl font-bold text-emerald-300'>Code, Click, Commit</h1>
-          <p className='text-sm font-bold text-cyan-100'>
+          <p className='text-sm semi-semi-bold text-cyan-100'>
             Shipping scalable features one pull request at a time.
           </p>
         </div>
