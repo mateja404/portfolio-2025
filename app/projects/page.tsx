@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function Projects() {
   return (
     <div className="relative flex min-h-screen w-full bg-white dark:bg-emerald-950/60">
