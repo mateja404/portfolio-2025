@@ -5,6 +5,7 @@ import Navbar from './Navbar';
 import { HeroParallax } from '@/components/ui/hero-parallax';
 import DownloadResume from './DownloadResume';
 import Timeline from './TimelineAbout';
+import Footer from './Footer';
 
 export const products = [
   {
@@ -84,13 +85,14 @@ const AboutPage = () => {
             </div>
         </button>
       </div>
-      <div className={isSidebarOpen ? 'hidden' : 'flex flex-1 mt-10 flex-col gap-0'}>
+      <div className={isSidebarOpen ? 'hidden' : 'flex flex-1 mt-10 max-sm:mb-250 max-lg:mb-220 lg:mb-130 xl:mb-140 flex-col gap-0'}>
         <HeroParallax products={products}/>
         <DownloadResume/>
         <div className='mt-50'>
             <Timeline/>
         </div>
       </div>
+      <Footer/>
     </div>
   )
 }
