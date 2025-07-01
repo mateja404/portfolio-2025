@@ -1,9 +1,19 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  logging: {
+    fetches: {
+      fullUrl: true,
+    },
+  },
   images: {
-      domains: ['www.pinterest.com',],
-    }
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'cdn.studiozid.rs',
+      },
+    ],
+  },
 };
 
 export default nextConfig;

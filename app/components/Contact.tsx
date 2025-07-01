@@ -3,7 +3,6 @@
 import React, { useState } from 'react';
 import Navbar from './Navbar';
 import Image from 'next/image';
-import callme from "../../public/callme.png";
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -103,7 +102,7 @@ const Contact = () => {
         <div className='w-1/2 bg-emerald-800/60 flex justify-center items-center rounded-tr-xl rounded-br-xl max-sm:hidden'>
           <div className='relative w-full h-full flex justify-center'>
             <Image
-              src={callme}
+              src={"https://cdn.studiozid.rs/callme.png"}
               alt='callme'
               width={500}
               height={500}
