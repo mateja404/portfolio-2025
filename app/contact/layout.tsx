@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     siteName: "Mateja Stoev Portfolio",
     images: [
       {
-        url: "../../public/heroimg.png",
+        url: "https://cdn.studiozid.rs/heroimg.png",
         width: 1200,
         height: 630,
         alt: "Mateja Stoev - Contact Page"

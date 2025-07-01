@@ -25,11 +25,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Mateja Stoev",
     description: "Full-stack web developer from Serbia",
-    url: "https://mateja.studiozid.rs/contact",
+    url: "https://mateja.studiozid.rs",
     siteName: "Mateja Stoev Portfolio",
     images: [
       {
-        url: "../../public/heroimg.png",
+        url: "https://cdn.studiozid.rs/heroimg.png",
         width: 1200,
         height: 630,
         alt: "Mateja Stoev - Landing Page"
