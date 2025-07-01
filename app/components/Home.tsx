@@ -39,8 +39,8 @@ const HomePage = () => {
           </div>
         </section>
         <Features isSidebarOpen={isSidebarOpen}/>
-        <Tech/>
-        <Footer/>
+        <Tech isSidebarOpen={isSidebarOpen}/>
+        <Footer isSidebarOpen={isSidebarOpen}/>
     </main>
   )
 }

@@ -65,9 +65,26 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${poppins.className} antialiased`}
-      >
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "name": "Mateja Stoev",
+              "jobTitle": "Full Stack Web Developer",
+              "url": "https://mateja.studiozid.rs",
+              "sameAs": ["https://github.com/mateja404"],
+              "worksFor": {
+                "@type": "Organization",
+                "name": "Freelance"
+              }
+            })
+          }}
+        />
+      </head>
+      <body className={`${poppins.className} antialiased`}>
         {children}
       </body>
     </html>

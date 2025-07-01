@@ -45,7 +45,7 @@ const Contact = () => {
         }
     }
   return (
-    <div className='w-full bg-transparent max-w-5xl z-20 mx-auto min-h-screen px-7 py-7 flex flex-col'>
+    <div className='w-full relative bg-transparent max-w-5xl z-20 mx-auto min-h-screen px-7 py-7 flex flex-col'>
       <Toaster/>
       <div>
         <Navbar isSidebarOpen={isSidebarOpen}/>

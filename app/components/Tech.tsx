@@ -7,14 +7,12 @@ import htmlicon from "../../public/html.png";
 import cssicon from "../../public/css.png";
 import tailwindicon from "../../public/tailwind.svg";
 import nextjsicon from "../../public/nextjs.svg";
-import nodejsicon from "../../public/nodejs.svg";
-import expressicon from "../../public/Express.svg";
 import Backend from './Backend';
 import Databases from './Databases';
 
-const TechStack = () => {
+const TechStack = ({ isSidebarOpen }: any) => {
   return (
-    <section className="mt-7 mb-20 max-sm:mb-45 xl:mt-30 w-full h-[600px] mx-auto flex flex-col gap-y-5">
+    <section className={isSidebarOpen ? "hidden" : "mt-7 mb-20 max-sm:mb-45 xl:mt-30 w-full h-[600px] mx-auto flex flex-col gap-y-5"}>
         <h1 className='border-b-1 semi-bold border-slate-500 text-slate-500 text-md'>TECH STACK</h1>
         <h3 className='mt-7 semi-semi-bold'>Frontend</h3>
         <div className="w-full h-1/3 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-y-0 sm:gap-y-3 max-sm:gap-y-3 gap-x-3 relative">
