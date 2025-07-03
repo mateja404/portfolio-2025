@@ -14,7 +14,7 @@ const TechStack = ({ isSidebarOpen }: any) => {
   return (
     <section className={isSidebarOpen ? "hidden" : "mt-7 max-sm:mb-270 max-lg:mb-200 lg:mb-130 xl:mb-140 w-full h-[600px] mx-auto flex flex-col gap-y-5"}>
         <h1 className='border-b-1 semi-bold border-white/80 text-white/80 text-md'>TECH STACK</h1>
-        <h3 className='mt-7 semi-semi-bold'>Frontend</h3>
+        <h2 className='mt-7 semi-semi-bold'>Frontend</h2>
         <div className="w-full h-1/3 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-y-0 sm:gap-y-3 max-sm:gap-y-3 gap-x-3 relative">
             <div className='max-sm:w-full sm:w-full md:w-[250px] lg:w-[230px] xl:w-[200px] h-[55px] bg-emerald-800/70 rounded-md relative items-center flex pl-3 gap-x-3'>
               <div className='w-[35px] h-[35px] flex items-center justify-center bg-react rounded-lg'>
