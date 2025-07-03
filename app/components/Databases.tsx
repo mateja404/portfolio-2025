@@ -1,5 +1,5 @@
 import React from 'react';
-import mysqlicon from "../../public/mysql.png";
+import mysqlicon from "../../public/mysql.svg";
 import mongodbicon from "../../public/mongodb.svg";
 import Image from 'next/image';
 

@@ -3,20 +3,10 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
 const poppins = Poppins({
   subsets: ['latin'],
   style: 'normal',
   weight: ['400', '500', '600', '700'],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
@@ -84,6 +74,7 @@ export default function RootLayout({
           }}
         />
         <meta name="msvalidate.01" content="1379BF81FDA8D6FEB64C97335E6D0827" />
+        <meta name="google-site-verification" content="YCWd8QcCHEaMo1806_a8ozetx43ck9ywzkE3i76BDrk" />
       </head>
       <body className={`${poppins.className} antialiased`}>
         {children}
