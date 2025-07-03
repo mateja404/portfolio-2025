@@ -83,6 +83,7 @@ export default function RootLayout({
             })
           }}
         />
+        <meta name="msvalidate.01" content="1379BF81FDA8D6FEB64C97335E6D0827" />
       </head>
       <body className={`${poppins.className} antialiased`}>
         {children}
