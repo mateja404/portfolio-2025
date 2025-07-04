@@ -9,10 +9,11 @@ import tailwindicon from "../../public/tailwind.svg";
 import nextjsicon from "../../public/nextjs.svg";
 import Backend from './Backend';
 import Databases from './Databases';
+import Tools from './Tools';
 
 const TechStack = ({ isSidebarOpen }: any) => {
   return (
-    <section className={isSidebarOpen ? "hidden" : "mt-7 max-sm:mb-270 max-lg:mb-200 lg:mb-130 xl:mb-140 w-full h-[600px] mx-auto flex flex-col gap-y-5"}>
+    <section className={isSidebarOpen ? "hidden" : "mt-7 max-sm:mb-300 max-lg:mb-260 lg:mb-160 xl:mb-160 w-full h-[600px] mx-auto flex flex-col gap-y-5"}>
         <h1 className='border-b-1 semi-bold border-white/80 text-white/80 text-md'>TECH STACK</h1>
         <h2 className='mt-7 semi-semi-bold'>Frontend</h2>
         <div className="w-full h-1/3 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-y-0 sm:gap-y-3 max-sm:gap-y-3 gap-x-3 relative">
@@ -42,7 +43,7 @@ const TechStack = ({ isSidebarOpen }: any) => {
             </div>
             <div className='max-sm:w-full sm:w-full md:w-[250px] lg:w-[230px] xl:w-[200px] h-[55px] bg-emerald-800/70 rounded-md relative items-center flex pl-3 gap-x-3'>
               <div className='w-[35px] h-[35px] flex items-center justify-center bg-react rounded-lg'>
-                <Image src={cssicon} alt='react icon' width={25} height={25} loading='lazy' />
+                <Image src={cssicon} alt='react icon' width={20} height={20} loading='lazy' />
               </div>
               <p className='semi-semi-bold text-slate-300'>CSS</p>
             </div>
@@ -61,6 +62,7 @@ const TechStack = ({ isSidebarOpen }: any) => {
         </div>
         <Backend/>
         <Databases/>
+        <Tools/>
     </section>
   )
 }

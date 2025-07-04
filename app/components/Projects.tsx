@@ -62,7 +62,7 @@ const ProjectsPage = () => {
                     </div>
                 </div>
             </div>
-            <div className="w-full h-[500px] rounded-lg relative bg-gradient-to-br from-emerald-500/60 to-black border border-emerald-500/20 hover:border-emerald-500/80 transition-all duration-300">
+            <div className="w-full max-sm:h-[550px] h-[500px] rounded-lg relative bg-gradient-to-br from-emerald-500/60 to-black border border-emerald-500/20 hover:border-emerald-500/80 transition-all duration-300">
                 <span className="pt-[5px] pb-[5px] pl-[20px] pr-[20px] rounded-full bg-gradient-to-r from bg-emerald-400/80 to-green-400 absolute left-5 top-5 z-20 flex">
                     <p className="text-white text-sm semi-semi-bo5">Nextjs</p>
                 </span>
@@ -71,7 +71,7 @@ const ProjectsPage = () => {
                 </div>
                 <div className="absolute bottom-0 flex flex-col gap-y-2 w-full h-[40%] bg-transparent pt-[15px] pl-[20px] pr-[10px]">
                     <h3 className="text-2xl font-semibold">Studio Zid</h3>
-                    <p className="text-slate-300 text-[0.8rem]">A sleek and immersive portfolio crafted with a dark aesthetic and emerald highlights — designed to spotlight web projects through a minimalist yet impactful visual experience.</p>
+                    <p className="text-slate-300 text-[0.8rem]">A clean and functional website built for a painting service studio — developed with Next.js and integrated backend for Google-based login and client reviews, combining simplicity with user-focused utility.</p>
                     <div className="relative w-full h-[30%] mx-auto">
                         <div className="absolute bottom-0 flex flex-row pb-3 gap-x-3">
                         <span className="pt-[5px] pb-[5px] pl-[20px] pr-[20px] rounded-full bg-gradient-to-r from bg-emerald-400/80 to-green-400 z-20 flex">
@@ -89,26 +89,20 @@ const ProjectsPage = () => {
             </div>
             <div className="w-full h-[500px] rounded-lg relative bg-gradient-to-br from-emerald-500/60 to-black border border-emerald-500/20 hover:border-emerald-500/80 transition-all duration-300">
                 <span className="pt-[5px] pb-[5px] pl-[20px] pr-[20px] rounded-full bg-gradient-to-r from bg-emerald-400/80 to-green-400 absolute left-5 top-5 z-20 flex">
-                    <p className="text-white text-sm semi-semi-bo5">Nextjs</p>
+                    <p className="text-white text-sm semi-semi-bo5">React</p>
                 </span>
                 <div className="absolute top-0 w-full h-[60%] bg-blue-500 rounded-t-lg">
                     <Image src={precizna} alt="first project" width={597} height={300} className="w-full h-full object-cover rounded-t-lg" />
                 </div>
                 <div className="absolute bottom-0 flex flex-col gap-y-2 w-full h-[40%] bg-transparent pt-[15px] pl-[20px] pr-[10px]">
                     <h3 className="text-2xl font-semibold">Precizna Poljoprivreda</h3>
-                    <p className="text-slate-300 text-[0.8rem]">A sleek and immersive portfolio crafted with a dark aesthetic and emerald highlights — designed to spotlight web projects through a minimalist yet impactful visual experience.</p>
+                    <p className="text-slate-300 text-[0.8rem]">A bright and user-friendly platform for precision agriculture — featuring an interactive map, real-time data visualization, and an intuitive admin panel for streamlined land and crop management.</p>
                     <div className="relative w-full h-[30%] mx-auto">
                         <div className="absolute bottom-0 flex flex-row pb-3 gap-x-3">
-                        <span className="pt-[5px] pb-[5px] pl-[20px] pr-[20px] rounded-full bg-gradient-to-r from bg-emerald-400/80 to-green-400 z-20 flex">
-                            <p className="text-white text-sm semi-semi-bo5">Nextjs</p>
-                        </span>
-                        <span className="pt-[5px] pb-[5px] pl-[20px] pr-[20px] rounded-full bg-gradient-to-r from bg-emerald-400/80 to-green-400 z-20 flex">
-                            <p className="text-white text-sm semi-semi-bo5">Nextjs</p>
-                        </span>
-                        <span className="pt-[5px] pb-[5px] pl-[20px] pr-[20px] rounded-full bg-gradient-to-r from bg-emerald-400/80 to-green-400 z-20 flex">
-                            <p className="text-white text-sm semi-semi-bo5">Tailwind</p>
-                        </span>
-                    </div>
+                            <span className="pt-[5px] pb-[5px] pl-[20px] pr-[20px] rounded-full bg-gradient-to-r from bg-emerald-400/80 to-green-400 z-20 flex">
+                                <p className="text-white text-sm semi-semi-bo5">React</p>
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -121,14 +115,14 @@ const ProjectsPage = () => {
                 </div>
                 <div className="absolute bottom-0 flex flex-col gap-y-2 w-full h-[40%] bg-transparent pt-[15px] pl-[20px] pr-[10px]">
                     <h3 className="text-2xl font-semibold">Foodieland</h3>
-                    <p className="text-slate-300 text-[0.8rem]">A sleek and immersive portfolio crafted with a dark aesthetic and emerald highlights — designed to spotlight web projects through a minimalist yet impactful visual experience.</p>
+                    <p className="text-slate-300 text-[0.8rem]">A fresh and inviting recipe website inspired by a Figma design — built to showcase diverse culinary content through a clean layout, vibrant imagery, and an intuitive browsing experience.</p>
                     <div className="relative w-full h-[30%] mx-auto">
                         <div className="absolute bottom-0 flex flex-row pb-3 gap-x-3">
                         <span className="pt-[5px] pb-[5px] pl-[20px] pr-[20px] rounded-full bg-gradient-to-r from bg-emerald-400/80 to-green-400 z-20 flex">
                             <p className="text-white text-sm semi-semi-bo5">Nextjs</p>
                         </span>
                         <span className="pt-[5px] pb-[5px] pl-[20px] pr-[20px] rounded-full bg-gradient-to-r from bg-emerald-400/80 to-green-400 z-20 flex">
-                            <p className="text-white text-sm semi-semi-bo5">Nextjs</p>
+                            <p className="text-white text-sm semi-semi-bo5">React</p>
                         </span>
                         <span className="pt-[5px] pb-[5px] pl-[20px] pr-[20px] rounded-full bg-gradient-to-r from bg-emerald-400/80 to-green-400 z-20 flex">
                             <p className="text-white text-sm semi-semi-bo5">Tailwind</p>

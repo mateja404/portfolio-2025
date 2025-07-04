@@ -11,7 +11,7 @@ import toast, { Toaster } from "react-hot-toast";
 
 const Contact = () => {
     const [isActive, setIsActive] = useState(false);
-    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+    const [isSidebarOpen, setIsSidebarOpen] = useState<boolean>(false);
     const [name, setName] = useState<string>("");
     const [email, setEmail] = useState<string>("");
     const [message, setMessage] = useState<string>("");
