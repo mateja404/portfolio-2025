@@ -2,6 +2,7 @@ import React from 'react';
 import vscodesvg from "../../public/vscode.svg";
 import githubsvg from "../../public/github-mark-white.svg";
 import gitsvg from "../../public/git.svg";
+import postmansvg from "../../public/postman.svg";
 import Image from 'next/image';
 
 const Tools = () => {
@@ -26,6 +27,12 @@ const Tools = () => {
                 <Image src={gitsvg} alt='react icon' width={20} height={20} />
               </div>
               <p className='semi-semi-bold text-slate-300'>Git</p>
+            </div>
+            <div className='max-sm:w-full sm:w-full md:w-[250px] lg:w-[230px] xl:w-[200px] h-[55px] bg-emerald-800/70 rounded-md relative items-center flex pl-3 gap-x-3'>
+              <div className='w-[35px] h-[35px] flex items-center justify-center bg-html rounded-lg'>
+                <Image src={postmansvg} alt='react icon' width={23} height={23} />
+              </div>
+              <p className='semi-semi-bold text-slate-300'>Postman</p>
             </div>
         </div>
     </section>

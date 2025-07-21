@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Image from "next/image";
@@ -8,8 +9,10 @@ import mateja1 from "../../public/mateja1.webp";
 import foodie from "../../public/foodie.webp";
 import studiozid from "../../public/studiozid2.png";
 import precizna from "../../public/precizna.webp";
+import aistartup from "../../public/aistartup.webp";
 
 const ProjectsPage = () => {
+    const router = useRouter();
     const [isSidebarOpen, setIsSidebarOpen] = useState<boolean>(false);
     const [isActive, setIsActive] = useState<boolean>(false);
 
@@ -37,7 +40,7 @@ const ProjectsPage = () => {
             <p className="text-lg text-slate-300 text-center">Take a look at my portfolio of responsive websites and web apps — designed for performance, usability, and unique brand experiences.</p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-2 gap-6 w-full mt-30 px-4">
-            <div className="w-[100%] h-[500px] rounded-lg relative bg-gradient-to-br from-emerald-500/60 to-black border border-emerald-500/20 hover:border-emerald-500/80 transition-all duration-300">
+            <div className="w-[100%] h-[500px] rounded-lg group cursor-pointer relative bg-gradient-to-br from-emerald-500/60 to-black border border-emerald-500/20 hover:border-emerald-500/80 transition-all duration-300" onClick={() => router.push("/")}>
                 <span className="pt-[5px] pb-[5px] pl-[20px] pr-[20px] rounded-full bg-gradient-to-r from bg-emerald-400/80 to-green-400 absolute left-5 top-5 z-20 flex">
                     <p className="text-white text-sm semi-semi-bo5">Nextjs</p>
                 </span>
@@ -45,7 +48,7 @@ const ProjectsPage = () => {
                     <Image src={mateja1} alt="first project" width={1920} height={1080} className="w-full h-full object-cover rounded-t-lg" />
                 </div>
                 <div className="absolute bottom-0 flex flex-col gap-y-2 w-full h-[40%] bg-transparent pt-[15px] pl-[20px] pr-[10px]">
-                    <h3 className="text-2xl font-semibold">Mateja Stoev portfolio</h3>
+                    <h3 className="text-2xl font-semibold group-hover:text-emerald-300">Mateja Stoev portfolio</h3>
                     <p className="text-slate-300 text-[0.8rem]">A sleek and immersive portfolio crafted with a dark aesthetic and emerald highlights — designed to spotlight web projects through a minimalist yet impactful visual experience.</p>
                     <div className="relative w-full h-[30%] mx-auto">
                         <div className="absolute bottom-0 flex flex-row pb-3 gap-x-3">
@@ -62,7 +65,7 @@ const ProjectsPage = () => {
                     </div>
                 </div>
             </div>
-            <div className="w-full max-sm:h-[550px] h-[500px] rounded-lg relative bg-gradient-to-br from-emerald-500/60 to-black border border-emerald-500/20 hover:border-emerald-500/80 transition-all duration-300">
+            <div className="w-full max-sm:h-[550px] h-[500px] group rounded-lg relative bg-gradient-to-br from-emerald-500/60 to-black border border-emerald-500/20 hover:border-emerald-500/80 transition-all duration-300 cursor-pointer" onClick={() => router.push("https://studiozid.rs")}>
                 <span className="pt-[5px] pb-[5px] pl-[20px] pr-[20px] rounded-full bg-gradient-to-r from bg-emerald-400/80 to-green-400 absolute left-5 top-5 z-20 flex">
                     <p className="text-white text-sm semi-semi-bo5">Nextjs</p>
                 </span>
@@ -70,7 +73,7 @@ const ProjectsPage = () => {
                     <Image src={studiozid} alt="first project" width={608} height={300} className="w-full h-full object-cover rounded-t-lg" />
                 </div>
                 <div className="absolute bottom-0 flex flex-col gap-y-2 w-full h-[40%] bg-transparent pt-[15px] pl-[20px] pr-[10px]">
-                    <h3 className="text-2xl font-semibold">Studio Zid</h3>
+                    <h3 className="text-2xl font-semibold group-hover:text-emerald-300">Studio Zid</h3>
                     <p className="text-slate-300 text-[0.8rem]">A clean and functional website built for a painting service studio — developed with Next.js and integrated backend for Google-based login and client reviews, combining simplicity with user-focused utility.</p>
                     <div className="relative w-full h-[30%] mx-auto">
                         <div className="absolute bottom-0 flex flex-row pb-3 gap-x-3">
@@ -87,7 +90,7 @@ const ProjectsPage = () => {
                     </div>
                 </div>
             </div>
-            <div className="w-full h-[500px] rounded-lg relative bg-gradient-to-br from-emerald-500/60 to-black border border-emerald-500/20 hover:border-emerald-500/80 transition-all duration-300">
+            <div className="w-full h-[500px] group rounded-lg relative bg-gradient-to-br from-emerald-500/60 to-black border border-emerald-500/20 hover:border-emerald-500/80 transition-all duration-300 cursor-pointer" onClick={() => router.push("https://preciznapoljoprivreda.rs")}>
                 <span className="pt-[5px] pb-[5px] pl-[20px] pr-[20px] rounded-full bg-gradient-to-r from bg-emerald-400/80 to-green-400 absolute left-5 top-5 z-20 flex">
                     <p className="text-white text-sm semi-semi-bo5">React</p>
                 </span>
@@ -95,7 +98,7 @@ const ProjectsPage = () => {
                     <Image src={precizna} alt="first project" width={597} height={300} className="w-full h-full object-cover rounded-t-lg" />
                 </div>
                 <div className="absolute bottom-0 flex flex-col gap-y-2 w-full h-[40%] bg-transparent pt-[15px] pl-[20px] pr-[10px]">
-                    <h3 className="text-2xl font-semibold">Precizna Poljoprivreda</h3>
+                    <h3 className="text-2xl font-semibold group-hover:text-emerald-300">Precizna Poljoprivreda</h3>
                     <p className="text-slate-300 text-[0.8rem]">A bright and user-friendly platform for precision agriculture — featuring an interactive map, real-time data visualization, and an intuitive admin panel for streamlined land and crop management.</p>
                     <div className="relative w-full h-[30%] mx-auto">
                         <div className="absolute bottom-0 flex flex-row pb-3 gap-x-3">
@@ -106,7 +109,7 @@ const ProjectsPage = () => {
                     </div>
                 </div>
             </div>
-            <div className="w-full h-[500px] rounded-lg relative bg-gradient-to-br from-emerald-500/60 to-black border border-emerald-500/20 hover:border-emerald-500/80 transition-all duration-300">
+            <div className="w-full h-[500px] rounded-lg group relative bg-gradient-to-br from-emerald-500/60 to-black border border-emerald-500/20 hover:border-emerald-500/80 transition-all duration-300 cursor-pointer" onClick={() => router.push("https://foodieland-five.vercel.app")}>
                 <span className="pt-[5px] pb-[5px] pl-[20px] pr-[20px] rounded-full bg-gradient-to-r from bg-emerald-400/80 to-green-400 absolute left-5 top-5 z-20 flex">
                     <p className="text-white text-sm semi-semi-bo5">Nextjs</p>
                 </span>
@@ -114,8 +117,33 @@ const ProjectsPage = () => {
                     <Image src={foodie} width={601} height={300} alt="first project" className="h-full object-cover rounded-t-lg" />
                 </div>
                 <div className="absolute bottom-0 flex flex-col gap-y-2 w-full h-[40%] bg-transparent pt-[15px] pl-[20px] pr-[10px]">
-                    <h3 className="text-2xl font-semibold">Foodieland</h3>
+                    <h3 className="text-2xl font-semibold group-hover:text-emerald-300">Foodieland</h3>
                     <p className="text-slate-300 text-[0.8rem]">A fresh and inviting recipe website inspired by a Figma design — built to showcase diverse culinary content through a clean layout, vibrant imagery, and an intuitive browsing experience.</p>
+                    <div className="relative w-full h-[30%] mx-auto">
+                        <div className="absolute bottom-0 flex flex-row pb-3 gap-x-3">
+                        <span className="pt-[5px] pb-[5px] pl-[20px] pr-[20px] rounded-full bg-gradient-to-r from bg-emerald-400/80 to-green-400 z-20 flex">
+                            <p className="text-white text-sm semi-semi-bo5">Nextjs</p>
+                        </span>
+                        <span className="pt-[5px] pb-[5px] pl-[20px] pr-[20px] rounded-full bg-gradient-to-r from bg-emerald-400/80 to-green-400 z-20 flex">
+                            <p className="text-white text-sm semi-semi-bo5">React</p>
+                        </span>
+                        <span className="pt-[5px] pb-[5px] pl-[20px] pr-[20px] rounded-full bg-gradient-to-r from bg-emerald-400/80 to-green-400 z-20 flex">
+                            <p className="text-white text-sm semi-semi-bo5">Tailwind</p>
+                        </span>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div className="w-full h-[500px] rounded-lg group relative bg-gradient-to-br from-emerald-500/60 to-black border border-emerald-500/20 hover:border-emerald-500/80 transition-all duration-300 cursor-pointer" onClick={() => router.push("https://ai-startup-sigma.vercel.app/")}>
+                <span className="pt-[5px] pb-[5px] pl-[20px] pr-[20px] rounded-full bg-gradient-to-r from bg-emerald-400/80 to-green-400 absolute left-5 top-5 z-20 flex">
+                    <p className="text-white text-sm semi-semi-bo5">Nextjs</p>
+                </span>
+                <div className="absolute top-0 w-full h-[60%] bg-blue-500 rounded-t-lg">
+                    <Image src={aistartup} width={601} height={300} alt="first project" className="h-full object-cover rounded-t-lg" />
+                </div>
+                <div className="absolute bottom-0 flex flex-col gap-y-2 w-full h-[40%] bg-transparent pt-[15px] pl-[20px] pr-[10px]">
+                    <h3 className="text-2xl font-semibold group-hover:text-emerald-300">AI Startup</h3>
+                    <p className="text-slate-300 text-[0.8rem]">Great design from uistore.design - fully responsive dark theme with violet highlights.</p>
                     <div className="relative w-full h-[30%] mx-auto">
                         <div className="absolute bottom-0 flex flex-row pb-3 gap-x-3">
                         <span className="pt-[5px] pb-[5px] pl-[20px] pr-[20px] rounded-full bg-gradient-to-r from bg-emerald-400/80 to-green-400 z-20 flex">
