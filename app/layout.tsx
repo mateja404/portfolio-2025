@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Poppins } from "next/font/google";
+import SessionWrapper from "@/components/SessionWrapper";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -77,7 +78,9 @@ export default function RootLayout({
         <meta name="google-site-verification" content="YCWd8QcCHEaMo1806_a8ozetx43ck9ywzkE3i76BDrk" />
       </head>
       <body className={`${poppins.className} antialiased`}>
-        {children}
+        <SessionWrapper>
+            {children}
+        </SessionWrapper>
       </body>
     </html>
   );
