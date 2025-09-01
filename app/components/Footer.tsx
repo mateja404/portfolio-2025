@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { FaWhatsapp, FaInstagram, FaLinkedin } from "react-icons/fa6";
-import { FaDiscord } from "react-icons/fa";
+import { FaTelegramPlane } from "react-icons/fa";
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -52,7 +52,7 @@ const Footer = ({ isSidebarOpen }: any) => {
               <p className='text-md text-slate-300 mt-2 text-start'>I'm here to assist you. Any day, any time. Just call me.</p>
               <div className='flex flex-row justify-center mt-7'>
                 <div className='w-1/2 h-full gap-y-3 xl:gap-y-5  flex flex-col'>
-                  <Link href={""} className='flex items-center gap-x-2'>
+                  <Link href={"https://wa.me/38163242823?text=Hello%2C%20World!"} className='flex items-center gap-x-2'>
                     <span className='w-[50px] h-[50px] rounded-xl bg-white/5 flex items-center justify-center'>
                       <FaWhatsapp className='text-2xl text-white/55 hover:text-white' />
                     </span>
@@ -61,7 +61,7 @@ const Footer = ({ isSidebarOpen }: any) => {
                       <p className='text-sm text-slate-300'>Chat with me</p>
                     </div>
                   </Link>
-                  <Link href={""} className='flex items-center gap-x-2'>
+                  <Link href={"https://www.instagram.com/3_kornepenal/"} className='flex items-center gap-x-2'>
                     <span className='w-[50px] h-[50px] rounded-xl bg-white/5 flex items-center justify-center'>
                       <FaInstagram className='text-2xl text-white/55 hover:text-white' />
                     </span>
@@ -72,13 +72,13 @@ const Footer = ({ isSidebarOpen }: any) => {
                   </Link>
                 </div>
                 <div className='w-1/2 h-full gap-y-3 xl:gap-y-5 flex flex-col'>
-                  <Link href={"#"} className='flex items-center gap-x-2' onClick={() => handleCopy("mrljb")}>
+                  <Link href={"https://t.me/hldnica"} className='flex items-center gap-x-2' onClick={() => handleCopy("mrljb")}>
                     <span className='w-[50px] h-[50px] rounded-xl bg-white/5 flex items-center justify-center'>
-                      <FaDiscord className='text-2xl text-white/55 hover:text-white' />
+                      <FaTelegramPlane className='text-2xl text-white/55 hover:text-white' />
                     </span>
                     <div className='flex flex-col leading-tight'>
-                      <span>Discord</span>
-                      <p className='text-sm text-slate-300'>mrljb</p>
+                      <span>Telegram</span>
+                      <p className='text-sm text-slate-300'>Chat with me</p>
                     </div>
                   </Link>
                   <Link href={""} className='flex items-center gap-x-2'>
