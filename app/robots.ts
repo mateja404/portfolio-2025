@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/admin',
     },
-    sitemap: 'https://mateja.studiozid.rs/sitemap.xml',
+    sitemap: 'https://matejastoev.dev/sitemap.xml',
   }
 }

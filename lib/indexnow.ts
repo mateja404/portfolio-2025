@@ -1,7 +1,7 @@
 export const notifyIndexNow = async (url: string) => {
   try {
     const key = 'c3c7991a01f345e08bc2fb6185939cee';
-    const keyLocation = `https://mateja.studiozid.rs/${key}.txt`;
+    const keyLocation = `https://matejastoev.dev/${key}.txt`;
 
     const body = JSON.stringify({
       host: 'tvoj-domen.com',

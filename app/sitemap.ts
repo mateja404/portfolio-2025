@@ -3,22 +3,22 @@ import type { MetadataRoute } from 'next'
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: 'https://mateja.studiozid.rs',
+      url: 'https://matejastoev.dev',
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 1,
     },
     {
-      url: 'https://mateja.studiozid.rs/about',
+      url: 'https://matejastoev.dev/about',
       lastModified: new Date(),
       changeFrequency: 'weekly',
-      priority: 0.8,
+      priority: 0.9,
     },
     {
-      url: 'https://mateja.studiozid.rs/projects',
+      url: 'https://matejastoev.dev/projects',
       lastModified: new Date(),
       changeFrequency: 'weekly',
-      priority: 0.8,
+      priority: 0.9,
     },
   ]
 }
