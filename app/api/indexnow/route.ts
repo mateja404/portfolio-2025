@@ -8,8 +8,8 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: 'Invalid URL' }, { status: 400 });
     }
 
-    const key = 'c3c7991a01f345e08bc2fb6185939cee';
-    const host = 'mateja.studiozid.rs';
+    const key = 'e1dafb0370614cc7b394ff4ede17144e';
+    const host = 'matejastoev.dev';
     const keyLocation = `https://${host}/${key}.txt`;
 
     const res = await fetch('https://api.indexnow.org/indexnow', {
