@@ -102,7 +102,7 @@ const Contact = () => {
         <div className='w-1/2 bg-emerald-800/60 flex justify-center items-center rounded-tr-xl rounded-br-xl max-sm:hidden'>
           <div className='relative w-full h-full flex justify-center'>
             <Image
-              src={"https://cdn.studiozid.rs/callme.png"}
+              src={"/callme.png"}
               alt='callme'
               width={500}
               height={500}
