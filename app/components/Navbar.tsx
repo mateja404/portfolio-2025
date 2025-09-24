@@ -3,11 +3,12 @@
 import React from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+import { motion } from 'motion/react';
 
 const Navbar = ({ isSidebarOpen }: any) => {
     const router = useRouter();
     return (
-        <nav className='w-full bg-transparent h-[100px] mx-auto flex items-center'>
+        <motion.nav initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: .3 }} className='w-full bg-transparent h-[100px] mx-auto flex items-center'>
             <div className='w-[40px] h-[40px] rounded-md bg-white flex items-center justify-center z-23 cursor-pointer' onClick={() => router.push("/")}><p className='text-2xl text-black font-bold cursor-pointer' onClick={() => router.push("/")}>M</p></div>
             <div className='hidden justify-center items-center w-[90%] h-full md:flex lg:flex xl:flex 2xl:flex'>
                 <ul className='flex flex-row gap-x-2'>
@@ -25,7 +26,7 @@ const Navbar = ({ isSidebarOpen }: any) => {
                 </div>
                 <button className='pt-[7px] pb-[7px] pl-[12px] pr-[12px] absolute bottom-30 bg-white text-sm font-medium rounded-lg text-black' onClick={() => router.push("/contact")}>Get in touch</button>
             </div>
-        </nav>
+        </motion.nav>
     )
 }
 

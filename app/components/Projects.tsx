@@ -10,8 +10,14 @@ import foodie from "../../public/foodie.webp";
 import studiozid from "../../public/studiozid2.png";
 import precizna from "../../public/precizna.webp";
 import aistartup from "../../public/aistartup.webp";
+import { motion } from "motion/react";
+import { useInView } from "react-intersection-observer";
 
 const ProjectsPage = () => {
+    const { ref, inView } = useInView({
+        triggerOnce: true,
+        threshold: 0.2,
+    });
     const router = useRouter();
     const [isSidebarOpen, setIsSidebarOpen] = useState<boolean>(false);
     const [isActive, setIsActive] = useState<boolean>(false);
@@ -26,18 +32,18 @@ const ProjectsPage = () => {
         <Navbar isSidebarOpen={isSidebarOpen}/>
       </div>
       <div>
-        <button onClick={() => toggleMenu()} className="md:hidden bg-neutral-500/30 absolute top-14 right-7 w-10 h-10 flex items-center justify-center rounded-xl transition-all duration-200 border border-neutral-500 group z-23" aria-label="Toggle menu">
+        <motion.button initial={{ y: 0, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: .3 }} onClick={() => toggleMenu()} className="md:hidden bg-neutral-500/30 absolute top-14 right-7 w-10 h-10 flex items-center justify-center rounded-xl transition-all duration-200 border border-neutral-500 group z-23" aria-label="Toggle menu">
             <div className="relative flex flex-col items-center justify-center w-5 h-5 overflow-hidden">
               <span className={`absolute w-5 h-[2px] bg-white/50 rounded-full transform transition-transform duration-300 ease-in-out ${isActive ? "rotate-45" : "-translate-y-1.5"}`}></span>
               <span className={`absolute w-5 h-[2px] bg-white/50 rounded-full transform transition-all duration-200 ease-in-out ${isActive ? "opacity-0" : "opacity-100"}`}></span>
               <span className={`absolute w-5 h-[2px] bg-white/50 rounded-full transform transition-transform duration-300 ease-in-out ${isActive ? "-rotate-45" : "translate-y-1.5"}`}></span>
             </div>
-        </button>
+        </motion.button>
       </div>
       <div className={isSidebarOpen ? 'hidden' : 'w-full h-[550px] flex flex-1 mt-10 max-sm:mb-250 max-lg:mb-220 lg:mb-130 xl:mb-140 flex-col gap-y-5'}>
         <div className="w-full h-full  flex flex-col gap-y-5">
-            <h1 className="text-6xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-white via-emerald-300 to-white">My Showcase</h1>
-            <p className="text-lg text-slate-300 text-center">Take a look at my portfolio of responsive websites and web apps — designed for performance, usability, and unique brand experiences.</p>
+            <motion.h1 initial={{ y: 0, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: .3 }} className="text-6xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-white via-emerald-300 to-white">My Showcase</motion.h1>
+            <motion.p initial={{ y: 0, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: .3 }} className="text-lg text-slate-300 text-center">Take a look at my portfolio of responsive websites and web apps — designed for performance, usability, and unique brand experiences.</motion.p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-2 gap-6 w-full mt-30 px-4">
             <div className="w-[100%] h-[500px] rounded-lg group cursor-pointer relative bg-gradient-to-br from-emerald-500/60 to-black border border-emerald-500/20 hover:border-emerald-500/80 transition-all duration-300" onClick={() => router.push("/")}>

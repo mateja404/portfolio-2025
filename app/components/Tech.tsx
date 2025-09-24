@@ -10,13 +10,19 @@ import nextjsicon from "../../public/nextjs.svg";
 import Backend from './Backend';
 import Databases from './Databases';
 import Tools from './Tools';
+import { motion } from 'motion/react';
+import { useInView } from 'react-intersection-observer';
 
 const TechStack = ({ isSidebarOpen }: any) => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
   return (
     <section className={isSidebarOpen ? "hidden" : "mt-7 max-sm:mb-310 max-lg:mb-260 lg:mb-160 xl:mb-160 w-full h-[600px] mx-auto flex flex-col gap-y-5"}>
         <h1 className='border-b-1 semi-bold border-white/80 text-white/80 text-md'>TECH STACK</h1>
         <h2 className='mt-7 semi-semi-bold'>Frontend</h2>
-        <div className="w-full h-1/3 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-y-0 sm:gap-y-3 max-sm:gap-y-3 gap-x-3 relative">
+        <motion.div ref={ref} initial={{ x: -50, opacity: 0 }} animate={inView ? { x: 0, opacity: 1 } : { x: -50, opacity: 0 }} transition={{ duration: .3 }} className="w-full h-1/3 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-y-0 sm:gap-y-3 max-sm:gap-y-3 gap-x-3 relative">
             <div className='max-sm:w-full sm:w-full md:w-[250px] lg:w-[230px] xl:w-[200px] h-[55px] bg-emerald-800/70 rounded-md relative items-center flex pl-3 gap-x-3'>
               <div className='w-[35px] h-[35px] flex items-center justify-center bg-react rounded-lg'>
                 <Image src={reacticon} alt='react icon' width={20} height={20} loading='lazy' />
@@ -59,7 +65,7 @@ const TechStack = ({ isSidebarOpen }: any) => {
               </div>
               <p className='semi-semi-bold text-slate-300'>NextJS</p>
             </div>
-        </div>
+        </motion.div>
         <Backend/>
         <Databases/>
         <Tools/>

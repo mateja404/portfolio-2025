@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import { Poppins } from "next/font/google";
-import SessionWrapper from "@/components/SessionWrapper";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -11,18 +9,18 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Mateja Stoev",
-  description: "Mateja Stoev - Full-stack Web Developer portfolio",
+  title: "Mateja Stoev - Full-Stack Web Developer",
+  description: "Mateja Stoev - Full-Stack Web Developer portfolio",
   openGraph: {
-    title: "Mateja Stoev",
+    title: "Mateja Stoev - Full-Stack Web Developer",
     description: "Full-stack web developer from Serbia",
     url: "https://matejastoev.dev",
     siteName: "Mateja Stoev Portfolio",
     images: [
       {
-        url: "https://matejstoev.dev/heroimage.webp",
+        url: "https://matejastoev.dev/matejaembed.webp",
         width: 1200,
-        height: 630,
+        height: 800,
         alt: "Mateja Stoev - Landing Page"
       }
     ],
@@ -36,6 +34,12 @@ export const metadata: Metadata = {
     "Mateja Stoev",
     "Mateja Stoev portfolio",
     "Full-stack web developer",
+    "Full-Stack web developer",
+    "Fullstack web developer",
+    "fullstack web developer",
+    "Full-Stack Web Developer Serbia",
+    "Full-Stack Web Developer",
+    "Full-Stack Web Developer Srbija",
     "Frontend developer",
     "Backend developer",
     "React developer",
@@ -66,7 +70,7 @@ export default function RootLayout({
               "@type": "Person",
               "name": "Mateja Stoev",
               "jobTitle": "Full Stack Web Developer",
-              "url": "https://mateja.studiozid.rs",
+              "url": "https://matejastoev.dev",
               "sameAs": ["https://github.com/mateja404"],
               "worksFor": {
                 "@type": "Organization",
@@ -79,9 +83,7 @@ export default function RootLayout({
         <meta name="google-site-verification" content="YCWd8QcCHEaMo1806_a8ozetx43ck9ywzkE3i76BDrk" />
       </head>
       <body className={`${poppins.className} antialiased`}>
-        <SessionWrapper>
-            {children}
-        </SessionWrapper>
+        {children}
       </body>
     </html>
   );

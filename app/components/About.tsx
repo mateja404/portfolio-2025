@@ -9,56 +9,65 @@ import Footer from './Footer';
 
 export const products = [
   {
+    key: 1,
     title: "Mateja Stoev portfolio",
     link: "https://mateja.studiozid.rs",
     thumbnail:
       "https://i.ibb.co/p6PsqzvX/mateja1.png",
   },
   {
+    key: 2,
     title: "Studio Zid",
     link: "https://studiozid.rs",
     thumbnail:
       "https://i.ibb.co/6RNMvktw/studiozid1.png",
   },
   {
+    key: 3,
     title: "Precizna Poljoprivreda",
     link: "https://preciznapoljoprivreda.com",
     thumbnail:
       "https://i.ibb.co/tpZYR1tS/image.png",
   },
   {
+    key: 4,
     title: "Studio Zid",
     link: "https://studiozid.rs",
     thumbnail:
       "https://i.ibb.co/rRkrWk6X/image.png",
   },
   {
+    key: 5,
     title: "Precizna Poljoprivreda",
     link: "https://preciznapoljoprivreda.com",
     thumbnail:
       "https://aceternity.com/images/products/thumbnails/new/editrix.png",
   },
   {
-    title: "Mateja Stoev portfolio",
+    key: 6,
+    title: "Mateja Stoev website",
     link: "https://mateja.studiozid.rs",
     thumbnail:
       "https://i.ibb.co/p6PsqzvX/mateja1.png",
   },
  
   {
-    title: "Precizna Poljoprivreda",
+    key: 7,
+    title: "Studio Zid website",
     link: "https://preciznapoljoprivreda.com",
     thumbnail:
       "https://i.ibb.co/rRkrWk6X/image.png",
   },
   {
+    key: 8,
     title: "Studio Zid",
     link: "https://studiozid.rs",
     thumbnail:
       "https://i.ibb.co/6RNMvktw/studiozid1.png",
   },
   {
-    title: "Mateja Stoev portfolio",
+    key: 9,
+    title: "Mateja Stoev",
     link: "https://mateja.studiozid.rs",
     thumbnail:
       "https://i.ibb.co/p6PsqzvX/mateja1.png",
@@ -78,18 +87,18 @@ const AboutPage = () => {
       <Navbar isSidebarOpen={isSidebarOpen}/>
       <div>
         <button onClick={() => toggleMenu()} className="md:hidden bg-neutral-500/30 absolute top-14 right-7 w-10 h-10 flex items-center justify-center rounded-xl transition-all duration-200 border border-neutral-500 group z-23" aria-label="Toggle menu">
-            <div className="relative flex flex-col items-center justify-center w-5 h-5 overflow-hidden">
-              <span className={`absolute w-5 h-[2px] bg-white/50 rounded-full transform transition-transform duration-300 ease-in-out ${isActive ? "rotate-45" : "-translate-y-1.5"}`}></span>
-              <span className={`absolute w-5 h-[2px] bg-white/50 rounded-full transform transition-all duration-200 ease-in-out ${isActive ? "opacity-0" : "opacity-100"}`}></span>
-              <span className={`absolute w-5 h-[2px] bg-white/50 rounded-full transform transition-transform duration-300 ease-in-out ${isActive ? "-rotate-45" : "translate-y-1.5"}`}></span>
-            </div>
+          <div className="relative flex flex-col items-center justify-center w-5 h-5 overflow-hidden">
+            <span className={`absolute w-5 h-[2px] bg-white/50 rounded-full transform transition-transform duration-300 ease-in-out ${isActive ? "rotate-45" : "-translate-y-1.5"}`}></span>
+            <span className={`absolute w-5 h-[2px] bg-white/50 rounded-full transform transition-all duration-200 ease-in-out ${isActive ? "opacity-0" : "opacity-100"}`}></span>
+            <span className={`absolute w-5 h-[2px] bg-white/50 rounded-full transform transition-transform duration-300 ease-in-out ${isActive ? "-rotate-45" : "translate-y-1.5"}`}></span>
+          </div>
         </button>
       </div>
-      <div className={isSidebarOpen ? 'hidden' : 'flex flex-1 mt-10 max-sm:mb-250 max-lg:mb-220 lg:mb-130 xl:mb-140 flex-col gap-0'}>
+      <div className={isSidebarOpen ? 'hidden' : 'flex gap-3 flex-1 mt-10 max-sm:mb-250 max-lg:mb-220 lg:mb-130 xl:mb-140 flex-col'}>
         <HeroParallax products={products}/>
         <DownloadResume/>
         <div className='mt-50'>
-            <Timeline/>
+          <Timeline/>
         </div>
       </div>
       <Footer/>
