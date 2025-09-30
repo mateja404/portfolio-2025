@@ -166,7 +166,7 @@ const ProjectsPage = () => {
                     </div>
                 </div>
             </div>
-            <div className="w-full h-[500px] rounded-lg group relative bg-gradient-to-br from-emerald-500/60 to-black border border-emerald-500/20 hover:border-emerald-500/80 transition-all duration-300 cursor-pointer" onClick={() => router.push("https://ai-startup-sigma.vercel.app/")}>
+            <div className="w-full h-[500px] rounded-lg group relative bg-gradient-to-br from-emerald-500/60 to-black border border-emerald-500/20 hover:border-emerald-500/80 transition-all duration-300 cursor-pointer" onClick={() => router.push("https://hikariagency.org/")}>
                 <span className="pt-[5px] pb-[5px] pl-[20px] pr-[20px] rounded-full bg-gradient-to-r from bg-emerald-400/80 to-green-400 absolute left-5 top-5 z-20 flex">
                     <p className="text-white text-sm semi-semi-bo5">Nextjs</p>
                 </span>
