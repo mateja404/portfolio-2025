@@ -175,7 +175,7 @@ const ProjectsPage = () => {
                 </div>
                 <div className="absolute bottom-0 flex flex-col gap-y-2 w-full h-[40%] bg-transparent pt-[15px] pl-[20px] pr-[10px]">
                     <h3 className="text-2xl font-semibold group-hover:text-emerald-300">Hikari Agency</h3>
-                    <p className="text-slate-300 text-[0.8rem]">Hikari Agency is a modern digital agency specializing in fullstack solutions, combining elegant design with robust, scalable technology. Built with a sleek dark theme, the platform reflects Hikari’s core values: precision, innovation, and aesthetic excellence. From frontend finesse to backend architecture, Hikari delivers seamless user experiences tailored for the next generation of web and software applications.</p>
+                    <p className="text-slate-300 text-[0.8rem]">Hikari Agency is a modern digital agency specializing in fullstack solutions, combining elegant design with robust, scalable technology. Built with a sleek dark theme, the platform reflects Hikari’s core values: precision, innovation, and aesthetic excellence.</p>
                     <div className="relative w-full h-[30%] mx-auto">
                         <div className="absolute bottom-0 flex flex-row pb-3 gap-x-3">
                         <span className="pt-[5px] pb-[5px] pl-[20px] pr-[20px] rounded-full bg-gradient-to-r from bg-emerald-400/80 to-green-400 z-20 flex">
