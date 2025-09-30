@@ -10,6 +10,7 @@ import foodie from "../../public/foodie.webp";
 import studiozid from "../../public/studiozid2.png";
 import precizna from "../../public/precizna.webp";
 import aistartup from "../../public/aistartup.webp";
+import hikariagency from '../../public/hikariagency.webp';
 import { motion } from "motion/react";
 import { useInView } from "react-intersection-observer";
 
@@ -50,7 +51,7 @@ const ProjectsPage = () => {
                 <span className="pt-[5px] pb-[5px] pl-[20px] pr-[20px] rounded-full bg-gradient-to-r from bg-emerald-400/80 to-green-400 absolute left-5 top-5 z-20 flex">
                     <p className="text-white text-sm semi-semi-bo5">Nextjs</p>
                 </span>
-                <div className="absolute top-0 w-full h-[60%] bg-blue-500 rounded-t-lg">
+                <div className="absolute top-0 w-full h-[60%] bg-transparent rounded-t-lg">
                     <Image src={mateja1} alt="first project" width={1920} height={1080} className="w-full h-full object-cover rounded-t-lg" />
                 </div>
                 <div className="absolute bottom-0 flex flex-col gap-y-2 w-full h-[40%] bg-transparent pt-[15px] pl-[20px] pr-[10px]">
@@ -75,7 +76,7 @@ const ProjectsPage = () => {
                 <span className="pt-[5px] pb-[5px] pl-[20px] pr-[20px] rounded-full bg-gradient-to-r from bg-emerald-400/80 to-green-400 absolute left-5 top-5 z-20 flex">
                     <p className="text-white text-sm semi-semi-bo5">Nextjs</p>
                 </span>
-                <div className="absolute top-0 w-full h-[60%] bg-blue-500 rounded-t-lg">
+                <div className="absolute top-0 w-full h-[60%] bg-transparent rounded-t-lg">
                     <Image src={studiozid} alt="first project" width={608} height={300} className="w-full h-full object-cover rounded-t-lg" />
                 </div>
                 <div className="absolute bottom-0 flex flex-col gap-y-2 w-full h-[40%] bg-transparent pt-[15px] pl-[20px] pr-[10px]">
@@ -100,7 +101,7 @@ const ProjectsPage = () => {
                 <span className="pt-[5px] pb-[5px] pl-[20px] pr-[20px] rounded-full bg-gradient-to-r from bg-emerald-400/80 to-green-400 absolute left-5 top-5 z-20 flex">
                     <p className="text-white text-sm semi-semi-bo5">React</p>
                 </span>
-                <div className="absolute top-0 w-full h-[60%] bg-blue-500 rounded-t-lg">
+                <div className="absolute top-0 w-full h-[60%] bg-transparent rounded-t-lg">
                     <Image src={precizna} alt="first project" width={597} height={300} className="w-full h-full object-cover rounded-t-lg" />
                 </div>
                 <div className="absolute bottom-0 flex flex-col gap-y-2 w-full h-[40%] bg-transparent pt-[15px] pl-[20px] pr-[10px]">
@@ -119,7 +120,7 @@ const ProjectsPage = () => {
                 <span className="pt-[5px] pb-[5px] pl-[20px] pr-[20px] rounded-full bg-gradient-to-r from bg-emerald-400/80 to-green-400 absolute left-5 top-5 z-20 flex">
                     <p className="text-white text-sm semi-semi-bo5">Nextjs</p>
                 </span>
-                <div className="absolute top-0 w-full h-[60%] bg-blue-500 rounded-t-lg">
+                <div className="absolute top-0 w-full h-[60%] bg-transparent rounded-t-lg">
                     <Image src={foodie} width={601} height={300} alt="first project" className="h-full object-cover rounded-t-lg" />
                 </div>
                 <div className="absolute bottom-0 flex flex-col gap-y-2 w-full h-[40%] bg-transparent pt-[15px] pl-[20px] pr-[10px]">
@@ -144,12 +145,37 @@ const ProjectsPage = () => {
                 <span className="pt-[5px] pb-[5px] pl-[20px] pr-[20px] rounded-full bg-gradient-to-r from bg-emerald-400/80 to-green-400 absolute left-5 top-5 z-20 flex">
                     <p className="text-white text-sm semi-semi-bo5">Nextjs</p>
                 </span>
-                <div className="absolute top-0 w-full h-[60%] bg-blue-500 rounded-t-lg">
+                <div className="absolute top-0 w-full h-[60%] bg-transparent rounded-t-lg">
                     <Image src={aistartup} width={601} height={300} alt="first project" className="h-full object-cover rounded-t-lg" />
                 </div>
                 <div className="absolute bottom-0 flex flex-col gap-y-2 w-full h-[40%] bg-transparent pt-[15px] pl-[20px] pr-[10px]">
                     <h3 className="text-2xl font-semibold group-hover:text-emerald-300">AI Startup</h3>
                     <p className="text-slate-300 text-[0.8rem]">Great design from uistore.design - fully responsive dark theme with violet highlights.</p>
+                    <div className="relative w-full h-[30%] mx-auto">
+                        <div className="absolute bottom-0 flex flex-row pb-3 gap-x-3">
+                        <span className="pt-[5px] pb-[5px] pl-[20px] pr-[20px] rounded-full bg-gradient-to-r from bg-emerald-400/80 to-green-400 z-20 flex">
+                            <p className="text-white text-sm semi-semi-bo5">Nextjs</p>
+                        </span>
+                        <span className="pt-[5px] pb-[5px] pl-[20px] pr-[20px] rounded-full bg-gradient-to-r from bg-emerald-400/80 to-green-400 z-20 flex">
+                            <p className="text-white text-sm semi-semi-bo5">React</p>
+                        </span>
+                        <span className="pt-[5px] pb-[5px] pl-[20px] pr-[20px] rounded-full bg-gradient-to-r from bg-emerald-400/80 to-green-400 z-20 flex">
+                            <p className="text-white text-sm semi-semi-bo5">Tailwind</p>
+                        </span>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div className="w-full h-[500px] rounded-lg group relative bg-gradient-to-br from-emerald-500/60 to-black border border-emerald-500/20 hover:border-emerald-500/80 transition-all duration-300 cursor-pointer" onClick={() => router.push("https://ai-startup-sigma.vercel.app/")}>
+                <span className="pt-[5px] pb-[5px] pl-[20px] pr-[20px] rounded-full bg-gradient-to-r from bg-emerald-400/80 to-green-400 absolute left-5 top-5 z-20 flex">
+                    <p className="text-white text-sm semi-semi-bo5">Nextjs</p>
+                </span>
+                <div className="absolute top-0 w-full h-[60%] bg-transparent rounded-t-lg">
+                    <Image src={hikariagency} width={601} height={300} alt="first project" className="h-full object-cover rounded-t-lg" />
+                </div>
+                <div className="absolute bottom-0 flex flex-col gap-y-2 w-full h-[40%] bg-transparent pt-[15px] pl-[20px] pr-[10px]">
+                    <h3 className="text-2xl font-semibold group-hover:text-emerald-300">Hikari Agency</h3>
+                    <p className="text-slate-300 text-[0.8rem]">Hikari Agency is a modern digital agency specializing in fullstack solutions, combining elegant design with robust, scalable technology. Built with a sleek dark theme, the platform reflects Hikari’s core values: precision, innovation, and aesthetic excellence. From frontend finesse to backend architecture, Hikari delivers seamless user experiences tailored for the next generation of web and software applications.</p>
                     <div className="relative w-full h-[30%] mx-auto">
                         <div className="absolute bottom-0 flex flex-row pb-3 gap-x-3">
                         <span className="pt-[5px] pb-[5px] pl-[20px] pr-[20px] rounded-full bg-gradient-to-r from bg-emerald-400/80 to-green-400 z-20 flex">
