@@ -19,7 +19,7 @@ const TechStack = ({ isSidebarOpen }: any) => {
     threshold: 0.2,
   });
   return (
-    <section className={isSidebarOpen ? "hidden" : "mt-7 max-sm:mb-310 max-lg:mb-260 lg:mb-160 xl:mb-160 w-full h-[600px] mx-auto flex flex-col gap-y-5"}>
+    <section className={isSidebarOpen ? "hidden" : "mt-7 max-sm:mb-310 sm:mb-280 max-lg:mb-280 lg:mb-160 xl:mb-160 w-full h-[600px] mx-auto flex flex-col gap-y-5"}>
         <h1 className='border-b-1 semi-bold border-white/80 text-white/80 text-md'>TECH STACK</h1>
         <h2 className='mt-7 semi-semi-bold'>Frontend</h2>
         <motion.div ref={ref} initial={{ x: -50, opacity: 0 }} animate={inView ? { x: 0, opacity: 1 } : { x: -50, opacity: 0 }} transition={{ duration: .3 }} className="w-full h-1/3 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-y-0 sm:gap-y-3 max-sm:gap-y-3 gap-x-3 relative">

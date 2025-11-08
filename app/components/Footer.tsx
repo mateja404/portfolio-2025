@@ -44,11 +44,11 @@ const Footer = ({ isSidebarOpen }: any) => {
   return (
     <>
       <Toaster/>
-      <footer className={isSidebarOpen ? 'hidden' : 'absolute mb-10 bottom-0 left-1/2 -translate-x-1/2 flex-1 w-full max-sm:h-auto h-auto flex flex-col xl:flex-row max-sm:justify-center sm:justify-center md:justify-start'}>
+      <footer className={isSidebarOpen ? 'hidden' : 'absolute mb-10 bottom-0 left-1/2 -translate-x-1/2 flex-1 w-full max-sm:h-auto h-auto flex flex-col     xl:flex-row max-sm:justify-center sm:justify-center md:justify-start'}>
           <div className='w-full h-full flex flex-col gap-y-5 lg:flex-row xl:flex-row bg-transparent'>
-            <div className='w-full h-1/2 lg:w-1/2 lg:h-full xl:w-1/2 xl:h-full bg-transparent pl-5 pr-5'>
-              <h1 className='font-bold text-5xl bg-clip-text text-transparent bg-gradient-to-r from-white via-emerald-300 to-white'>Got any problem to solve?</h1>
-              <h1 className='font-bold text-5xl bg-clip-text text-transparent bg-gradient-to-l from-white via-emerald-300 to-white'>Let me know!</h1>
+            <div className='w-full h-1/2 lg:w-1/2 lg:h-full xl:w-1/2 xl:h-full pl-5 pr-5'>
+              <h1 className='font-bold text-[30px] sm:text-4xl md:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-white via-emerald-300 to-white'>Got any problem to solve?</h1>
+              <h1 className='font-bold text-[30px] sm:text-4xl md:text-5xl bg-clip-text text-transparent bg-gradient-to-l from-white via-emerald-300 to-white'>Let me know!</h1>
               <p className='text-md text-slate-300 mt-2 text-start'>I'm here to assist you. Any day, any time. Just call me.</p>
               <div className='flex flex-row justify-center mt-7'>
                 <div className='w-1/2 h-full gap-y-3 xl:gap-y-5  flex flex-col'>

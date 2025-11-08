@@ -1,9 +1,10 @@
 import React from 'react';
-import nodejsicon from "../../public/nodejs.svg";
-import expressicon from "../../public/Express.svg";
 import Image from 'next/image';
 import { motion } from 'motion/react';
 import { useInView } from 'react-intersection-observer';
+import nodejsicon from "../../public/nodejs.svg";
+import expressicon from "../../public/Express.svg";
+import nestjsicon from "../../public/nestjs.png";
 
 const Backend = () => {
   const { ref, inView } = useInView({
@@ -25,6 +26,12 @@ const Backend = () => {
                 <Image src={expressicon} alt='react icon' width={20} height={20} />
               </div>
               <p className='semi-semi-bold text-slate-300'>Express</p>
+            </div>
+            <div className='max-sm:w-full sm:w-full md:w-[250px] lg:w-[230px] xl:w-[200px] h-[55px] bg-emerald-800/70 rounded-md relative items-center flex pl-3 gap-x-3'>
+              <div className='w-[35px] h-[35px] flex items-center justify-center bg-red-700/50 rounded-lg'>
+                <Image src={nestjsicon} alt='react icon' width={20} height={20} />
+              </div>
+              <p className='semi-semi-bold text-slate-300'>NestJS</p>
             </div>
         </motion.div>
     </section>
