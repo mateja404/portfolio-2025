@@ -81,7 +81,7 @@ const Footer = ({ isSidebarOpen }: any) => {
                       <p className='text-sm text-slate-300'>Chat with me</p>
                     </div>
                   </Link>
-                  <Link href={""} className='flex items-center gap-x-2'>
+                  <Link href={"https://rs.linkedin.com/in/mateja-stoev-35a88b386"} className='flex items-center gap-x-2'>
                     <span className='w-[50px] h-[50px] rounded-xl bg-white/5 flex items-center justify-center'>
                       <FaLinkedin className='text-2xl text-white/55 hover:text-white' />
                     </span>
